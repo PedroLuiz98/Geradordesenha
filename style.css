@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Permanent+Marker&display=swap');
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #18181B;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signature {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #DFDFDF;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(155, 152, 152);
+    max-width: 650px;
+    border-radius: 20px;
+}
+
+.titlemain {
+    font-size: 60px;
+    color: rgb(180, 63, 180);
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container-input {
+    max-width: 480px;
+    margin: 14px 0;
+    text-align: center;
+}
+
+.container-input span {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #DFDFDF;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta {
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 16px;
+    background-color: purple;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+    transition: transform 0.5s;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.button-cta:hover {
+    transform: scale(1.05);
+}
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.password {
+    height: 50px;
+    background-color: rgba(0,0,0, 0.60);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid grey;
+    transition: transform 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: #fff;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgb(15,15,15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 500px){
+    .box-container {
+        max-width: 350px;
+    }
+    
+    .titlemain {
+        font-size: 50px;
+    }
+
+    .container-input {
+        max-width: 300px;
+    }
+
+    .button-cta {
+        width: 85%;
+    }
+
+    .container-password {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px){
+    .box-container {
+        max-width: 450px;
+    }
+    
+    .titlemain {
+        font-size: 50px;
+    }
+
+    .container-input {
+        max-width: 400px;
+    }
+
+    .button-cta {
+        width: 85%;
+    }
+
+    .container-password {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px){
+    .box-container {
+        max-width: 550px;
+    }
+    
+    .titlemain {
+        font-size: 55px;
+    }
+
+    .container-input {
+        max-width: 500px;
+    }
+
+    .button-cta {
+        width: 85%;
+    }
+
+    .container-password {
+        max-width: 480px;
+    }
+}
